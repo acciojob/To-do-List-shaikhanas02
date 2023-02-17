@@ -10,10 +10,12 @@ function addItem() {
 
     let inpItem = inp.value;
     if (inpItem === '') {
-        alert('Add item first');
-        return;
-    }
+        document.getElementById("p").innerHTML = "Input Compulsory";
+
+    }else{
     arr.push(inpItem);
+		
+	}
    // console.log(arr);
     listBody.innerHTML = ''; 
     arr.map(function (inpItem) {
